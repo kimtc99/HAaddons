@@ -1,0 +1,77 @@
+{
+  "Light": {
+    "type": "light",
+    "Number": 3,
+    "commandOFF": "3101000000000032",
+    "commandON": "3101010000000033",
+    "commandNUM": 4,
+
+    "stateOFF": "B0000100000000B1",
+    "stateON": "B0010100000000B2",
+    "stateNUM": 6
+  },
+  "Thermo": {
+    "type": "climate",
+    "Number": 5,
+    "commandOFF": "0401040000000009",
+    "commandON": "040104810000008A",
+    "commandCHANGE": "040103220000002A",
+    "commandNUM": 4,
+
+    "curTemp": 7,
+    "setTemp": 9,
+    "chaTemp": 7,
+
+    "stateOFF": "8280012322000048",
+    "stateON": "8281012322000049",
+    "stateNUM": 6,
+    "stateONOFFNUM": 4
+  },
+  "LightBreaker": {
+    "type": "switch",
+    "Number": 1,
+    "commandOFF": "2201000100000024",
+    "commandON": "2201010100000025",
+
+    "stateOFF": "A0000100001500B6",
+    "stateON": "A0010100001500B7"
+  },
+  "Gas": {
+    "type": "button",
+    "Number": 1,
+    "commandOFF": "1101800000000092",
+
+    "stateOFF": "9050500000000030",
+    "stateON": "90A0A000000000D0"
+  },
+  "Outlet": {
+    "type": "switch",
+    "Number": 2,
+    "commandOFF": "7A0101000000007C",
+    "commandON": "7A0101010000007D",
+    "commandNUM": 4,
+
+    "stateOFF": "F90001110000000B",
+    "stateON": "F90101110000000C",
+    "stateNUM": 6
+  },
+  "Fan": {
+    "type": "fan",
+    "Number": 0,
+    "commandOFF": "780101000000007A",
+    "commandON": "780101040000007C",
+    "commandCHANGE": "780102010000007C",
+    "speedNUM": 8,
+
+    "stateOFF": "F6000100000000F7",
+    "stateON": "F6040101000000FC"
+  },
+  "EV": {
+    "type": "button",
+    "Number": 1,
+    "commandON": "A0010100081500BF",
+
+    "stateON": "2301000000000024",
+    "BasementFloor": 2
+  }
+}

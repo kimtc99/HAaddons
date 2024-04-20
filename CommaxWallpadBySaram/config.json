@@ -1,0 +1,37 @@
+{
+  "name": "COMMAX Wallpad by Saram",
+  "version": "1.0.0",
+  "slug": "cwbs",
+  "url": "https://github.com/kimtc99/HAaddons",
+  "description": "mqtt 통신을 활용한 코맥스 월패드 컨트롤러",
+  "arch": ["armhf", "armv7", "aarch64", "amd64", "i386"],
+  "map": [
+    "share:rw"
+  ],
+  "startup": "application",
+  "boot": "auto",
+  "options": {
+    "DEBUG": false,
+    "mqtt_log": true,
+    "elfin_log": false,
+    "mqtt_server": "192.168.x.x",
+    "mqtt_id": "id",
+    "mqtt_password": "password",
+    "mqtt_TOPIC": "cwbs",
+    "elfin_server": "192.168.x.x",
+    "elfin_id": "admin",
+    "elfin_password": "elfin_password"
+  },
+  "schema": {
+    "DEBUG": "bool",
+    "mqtt_log": "bool",
+    "elfin_log": "bool",
+    "mqtt_server": "str",
+    "mqtt_id": "str",
+    "mqtt_password": "str",
+    "mqtt_TOPIC": "str",
+    "elfin_server": "str",
+    "elfin_id": "str",
+    "elfin_password": "str"
+  }
+}
