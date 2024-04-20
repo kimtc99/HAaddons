@@ -66,7 +66,7 @@ def find_device(config):
                 else:
                     device_num[name] = 1
 
-    mqtt_client = mqtt.Client('cwbs')
+    mqtt_client = mqtt.Client(mqtt.CallbackAPIVersion.VERSION1, 'cwbs')
     mqtt_client.username_pw_set(config['mqtt_id'], config['mqtt_password'])
     mqtt_client.on_connect = on_connect
     mqtt_client.on_message = on_message
@@ -105,7 +105,7 @@ def do_work(config, device_list):
     mqtt_log = config['mqtt_log']
     elfin_log = config['elfin_log']
 
-    mqtt_client = mqtt.Client(HA_TOPIC)
+    mqtt_client = mqtt.Client(mqtt.CallbackAPIVersion.VERSION1, HA_TOPIC)
 
     def pad(value):
         value = int(value)
