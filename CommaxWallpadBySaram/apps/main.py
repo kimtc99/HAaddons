@@ -32,7 +32,7 @@ def checksum(input_hex):
 def find_device(config):
     HA_TOPIC = config['mqtt_TOPIC']
 
-    with open('cwbs_devinfo.json') as file:
+    with open('/apps/cwbs_devinfo.json') as file:
         dev_info = json.load(file)
     statePrefix = {dev_info[name]['stateON'][:2]: name for name in dev_info if dev_info[name].get('stateON')}
     device_num = {name: 0 for name in statePrefix.values()}

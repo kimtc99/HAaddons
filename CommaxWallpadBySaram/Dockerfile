@@ -11,8 +11,8 @@ RUN pip install --no-cache-dir paho-mqtt
 # Copy data for add-on
 COPY apps /apps
 
-WORKDIR /apps
+WORKDIR /share
 
-CMD ["python", "main.py" ]
+CMD ["python", "/apps/main.py" ]
 
 
