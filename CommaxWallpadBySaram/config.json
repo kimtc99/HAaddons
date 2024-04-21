@@ -1,6 +1,6 @@
 {
   "name": "COMMAX Wallpad by Saram",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "slug": "cwbs",
   "url": "https://github.com/kimtc99/HAaddons",
   "description": "mqtt 통신을 활용한 코맥스 월패드 컨트롤러",
